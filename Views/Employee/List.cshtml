@@ -1,0 +1,14 @@
+﻿@model List<Employee>
+
+    <ul>
+    @foreach (var employee in Model)
+    {
+        /* Veritabanından gelen veriler direkt olarak ilgili view'lere veya client'lara gönderilmez. ViewModel'da belirili formatlara dönüştürülerek gönderilir. */
+        
+
+        <li>
+            @employee.Name @employee.Surname @employee.Position
+        </li>
+    }
+    
+    </ul>
